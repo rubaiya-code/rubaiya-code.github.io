@@ -12,8 +12,8 @@
       color: #333;
     }
     header {
-      background-color: #008080;
-      color: white;
+      background-color: #E6E6FA; /* Lavender */
+      color: #4B0082; /* Indigo */
       text-align: center;
       padding: 40px 20px;
     }
@@ -23,13 +23,22 @@
       margin: auto;
     }
     h2 {
-      color: #008080;
+      color: #4B0082;
       border-bottom: 2px solid #ccc;
       padding-bottom: 5px;
       margin-bottom: 15px;
     }
+    h3 {
+      color: #4B0082;
+      margin-top: 10px;
+    }
     ul, p {
       line-height: 1.6;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     .gallery img {
       width: 100%;
@@ -44,6 +53,7 @@
       height: 0;
       overflow: hidden;
       max-width: 100%;
+      margin-bottom: 20px;
     }
     .video-container iframe {
       position: absolute;
@@ -52,25 +62,35 @@
       width: 100%;
       height: 100%;
     }
+    a {
+      color: #4B0082;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
     footer {
-      background-color: #eee;
+      background-color: #E6E6FA;
       text-align: center;
       padding: 20px;
       font-size: 14px;
-      color: #555;
+      color: #4B0082;
     }
   </style>
 </head>
 <body>
 
 <header>
+  <img src="profile.jpg" alt="Rubaiya's Profile Picture" style="width:120px; height:120px; border-radius:50%; object-fit:cover; margin-bottom:15px;">
   <h1>Rubaiya Binte Rahman</h1>
   <p>💻 Developer | 🎨 Designer | ✂️ Creative Mind</p>
 </header>
 
 <section>
   <h2>About Me</h2>
-  <p>I’m a Computer Science student who loves coding, creating, and crafting. I explore creativity through design, development, and handmade art!</p>
+  <p>
+    I am a passionate learner with a background as a part-time primary school teacher for over a year. After completing my HSC in 2022, I faced challenges getting admission in my preferred subject, Computer Science. Instead of giving up, I took a gap year to develop valuable skills like HTML, CSS, basic JavaScript, and graphic design. I love creating art and have spent a lot of time honing my creativity. Combining my technical knowledge with my artistic passion, I am eager to grow and contribute in fields that blend technology and creativity.
+  </p>
 </section>
 
 <section>
@@ -86,40 +106,74 @@
 <section>
   <h2>Graphic Design</h2>
   <div class="gallery">
-    <img src="your-graphic1.jpg" alt="Design 1">
-    <img src="your-graphic2.jpg" alt="Design 2">
+    <img src="graphics/graphic1.jpg" alt="Design 1">
+    <img src="graphics/graphic2.jpg" alt="Design 2">
+    <img src="graphics/graphic3.jpg" alt="Design 3">
+    <img src="graphics/graphic4.jpg" alt="Design 4">
+    <img src="graphics/graphic5.jpg" alt="Design 5">
+    <img src="graphics/graphic6.jpg" alt="Design 6">
+    <img src="graphics/graphic7.jpg" alt="Design 7">
+    <img src="graphics/graphic8.jpg" alt="Design 8">
+    <img src="graphics/graphic9.jpg" alt="Design 9">
+    <img src="graphics/graphic10.jpg" alt="Design 10">
+    <img src="graphics/graphic11.jpg" alt="Design 11">
+    <img src="graphics/graphic12.jpg" alt="Design 12">
   </div>
 </section>
 
 <section>
   <h2>Coding Projects</h2>
   <ul>
-    <li><strong>Product Management System:</strong> Built with C. Features: login, search, add/edit/delete product, binary file handling.</li>
+    <li>
+      <strong>Product Management System:</strong> Built with C. Features: login, search, add/edit/delete product, binary file handling.
+      <br>
+      <a href="pdfs/product-management-system.pdf" target="_blank" download>Download Project PDF</a>
+    </li>
     <li><strong>My First Website:</strong> HTML & CSS personal site hosted on GitHub.</li>
   </ul>
 </section>
 
 <section>
   <h2>Arts & Crafts Gallery</h2>
+  <h3>Rubaiya's Artistry World</h3>
   <div class="gallery">
-    <img src="art1.jpg" alt="Craft 1">
-    <img src="art2.jpg" alt="Craft 2">
+    <img src="artistry/art1.jpg" alt="Craft 1">
+    <img src="artistry/art2.jpg" alt="Craft 2">
+    <img src="artistry/art3.jpg" alt="Craft 3">
+    <img src="artistry/art4.jpg" alt="Craft 4">
+    <img src="artistry/art5.jpg" alt="Craft 5">
+    <img src="artistry/art6.jpg" alt="Craft 6">
+    <img src="artistry/art7.jpg" alt="Craft 7">
+    <img src="artistry/art8.jpg" alt="Craft 8">
+    <img src="artistry/art9.jpg" alt="Craft 9">
+    <img src="artistry/art10.jpg" alt="Craft 10">
+    <img src="artistry/art11.jpg" alt="Craft 11">
+    <img src="artistry/art12.jpg" alt="Craft 12">
+    <img src="artistry/art13.jpg" alt="Craft 13">
+    <img src="artistry/art14.jpg" alt="Craft 14">
+    <img src="artistry/art15.jpg" alt="Craft 15">
+    <img src="artistry/art16.jpg" alt="Craft 16">
   </div>
 </section>
 
 <section>
   <h2>Video Showcase</h2>
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/HW2SOGgyV0U" frameborder="0" allowfullscreen></iframe>
   </div>
-  <p>🎥 You can add YouTube videos of your crafts, tutorials, or presentations here.</p>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/psW-hoVwkkQ" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <p>🎥 Here are some of my crafts, tutorials, and presentations!</p>
 </section>
 
 <section>
   <h2>Contact</h2>
-  <p>Email: rubaiya@email.com</p>
+  <p>Email: Rubaiya Binte Rahman</p>
   <p>GitHub: <a href="https://github.com/rubaiya-code" target="_blank">github.com/rubaiya-code</a></p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/rubaiya" target="_blank">linkedin.com/in/rubaiya</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/rubaiya-binte-rahman-72a43534b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/in/rubaiya-binte-rahman</a></p>
+  <p>Instagram: <a href="https://www.instagram.com/_rubaiya_rahman__?igsh=OGdrc2oxdTJ0c3Y5" target="_blank">instagram.com/_rubaiya_rahman__</a></p>
+  <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61577648223317" target="_blank">facebook.com/profile.php?id=61577648223317</a></p>
 </section>
 
 <footer>
